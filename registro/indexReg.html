@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./indexReg.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Registro</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="logo">
+          <img src="./img/logo copy.png" alt="Logo" />
+        </div>
+        <div class="buttons">
+          <button class="icon-button">Inicio</button>
+          <button class="icon-button">Productos</button>
+          <button class="icon-button">Categorias</button>
+          <button class="icon-button">Ofertas</button>
+        </div>
+        <div class="icons">
+          <button class="icon-buttonR"><i class="fas fa-heart"></i></button>
+          <button class="icon-buttonR">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <button class="icon-buttonR"><i class="fas fa-user"></i></button>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <div class="form-container">
+        <h2>REGISTRO</h2>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombres">Nombres:</label>
+              <input type="text" id="nombres" name="nombres" />
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="apellidos" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fecha_nacimiento">Fecha nacimiento:</label>
+              <input
+                type="date"
+                id="fecha_nacimiento"
+                name="fecha_nacimiento"
+              />
+            </div>
+            <div class="form-group">
+              <label for="celular">Celular:</label>
+              <input type="tel" id="celular" name="celular" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ciudad">Ciudad:</label>
+              <input type="text" id="ciudad" name="ciudad" />
+            </div>
+            <div class="form-group">
+              <label for="direccion">Direccion:</label>
+              <input type="text" id="direccion" name="direccion" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div class="form-group">
+              <label for="confirm_password">Confirmar contraseña:</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+              />
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit">REGISTRARSE</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-row">
+          <img src="./img/logo copy.png" alt="Icono" class="icono-footer" />
+          <div class="footer-links">
+            <h4>Categorias</h4>
+            <ul>
+              <li><a href="">Hombre</a></li>
+              <li><a href="">Mujer</a></li>
+              <li><a href="">Niños</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Informacion</h4>
+            <ul>
+              <li><a href="">Nuestra Historia</a></li>
+              <li><a href="">Nuestras Tiendas</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Servicio al Cliente</h4>
+            <ul>
+              <li><a href="">Politicas</a></li>
+              <li><a href="">Preguntas Frecuentes</a></li>
+              <li><a href="">Terminos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Social</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
