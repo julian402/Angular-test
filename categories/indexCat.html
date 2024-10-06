@@ -1,0 +1,136 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <title>Tienda</title>
+
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="nav-bar">
+                <img src="./img/Logo tienda.png" alt="Logo" class="logo">
+                <div class="buttons">
+                    <button class="icon-button">Inicio</button>
+                    <button class="icon-button">Productos</button>
+                    <button class="icon-button">Categorias</button>
+                    <button class="icon-button">Ofertas</button>
+                </div>
+                <div class="icons">
+                    <button class="icon-buttonR" aria-label="Favoritos">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="icon-buttonR" aria-label="Carrito">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="icon-buttonR" aria-label="Perfil de usuario">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </section>
+
+            <section class="products-grid">
+                <article class="product-cards">
+                    <img src="./img/Tenis.png" alt="Tenis">
+                    <h4>Tenis</h4>
+                </article>
+                <article class="product-cards">
+                    <img src="./img/sudadera.png" alt="Sudaderas">
+                    <h4>Sudaderas</h4>
+                </article>
+                <article class="product-cards">
+                    <img src="./img/shorts.png" alt="Shorts">
+                    <h4>Shorts</h4>
+                </article>
+                <article class="product-cards">
+                    <img src="./img/Medias.png" alt="Medias">
+                    <h4>Medias</h4>
+                </article>
+                <article class="product-cards">
+                    <img src="./img/camisetas.png" alt="Camisetas">
+                    <h4>Camisetas</h4>
+                </article>
+                <article class="product-cards">
+                    <img src="./img/gorras.png" alt="Gorras">
+                    <h4>Gorras</h4>
+                </article>
+            </section>
+        </main>
+
+        <aside class="filters">
+            <h3>Filtros</h3>
+            <label for="marca">Marcas</label>
+            <select id="marca">
+                <option>Marca 1</option>
+                <option>Marca 2</option>
+            </select>
+            <label for="talla">Tallas</label>
+            <select id="talla">
+                <option>Talla S</option>
+                <option>Talla M</option>
+            </select>
+            <label for="genero">Género</label>
+            <select id="genero">
+                <option>Hombre</option>
+                <option>Mujer</option>
+            </select>
+            <label for="color">Color</label>
+            <select id="color">
+                <option>Blanco</option>
+                <option>Negro</option>
+            </select>
+            <label for="precio">Precio</label>
+            <div class="price-filter">
+                <input type="text" placeholder="Min.">
+                <input type="text" placeholder="Max.">
+            </div>
+        </aside>
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-row">
+                    <img src="./img/Logo tienda.png" alt="Icono" class="logo" />
+                    <div class="footer-links">
+                        <h4>Categorias</h4>
+                        <ul>
+                            <li><a href="">Hombre</a></li>
+                            <li><a href="">Mujer</a></li>
+                            <li><a href="">Niños</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Informacion</h4>
+                        <ul>
+                            <li><a href="">Nuestra Historia</a></li>
+                            <li><a href="">Nuestras Tiendas</a></li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Servicio al Cliente</h4>
+                        <ul>
+                            <li><a href="">Politicas</a></li>
+                            <li><a href="">Preguntas Frecuentes</a></li>
+                            <li><a href="">Terminos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-suscribe">
+                        <label for="correo">Inscribete para recibir novedades</label>
+                        <input type="text" id="correo" name="correo"> 
+
+                    </div>
+        </footer>
+
+</body>
+
+</html>
