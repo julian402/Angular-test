@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*max-width: 800px; */
+    font-family: "Open Sans", sans-serif;
+ 
+  }
+
+  /*propiedades del body****************************************************************************** */
+  body {
+    background-color: #FFFFFF ;
+  }
+
+  /*inforacion header menu ***************************************************************************/
+  #cabecera{
+    padding: 15px;  
+  background-color: #003366 ;
+  border-radius: 20px;
+  border-style: groove;  
+  display: flex;
+  justify-content: left;
+   align-items: center;
+   gap: 25px;  
+   /* Specific Gap */
+   row-gap: 25px;
+   column-gap: 75px;   
+   /* Or shorthand */
+   gap: 25px 425px;  
+   place-items: center;
+   border-radius: 15px;
+   font-family: cursive;   
+   
+}
+/*estilo botones*/
+.btnsucess{
+    background-color: #75A2BF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center; 
+    font-size: 16px;
+    margin: 4px 2px;    
+    border-radius: 10px;
+    font-family: cursive;
+      
+}
+.titulo{
+    text-align: center;
+    font-family: cursive;
+    font-size:40px;
+    color: #003266;
+    
+  }
+  #contenedor{
+    text-align: center;
+   
+  }
+  /*estilos a catalogos*************/
+
+.catalogos{  
+  max-width: 1000px;  
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.grid-container {
+  margin-top: 60px;
+  margin-bottom: 55px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+ grid-template-rows: repeat(2, 368px); /* Crea 3 filas de altura fija de 100px */
+ gap: 10px; /* Espacio entre las celdas */
+ 
+}
+
+.grid-item {
+
+ color: #fff;
+ text-align: center;
+ padding: 20px;
+ border-radius: 20px;
+ border-style:groove;
+}
+
+.titulocard{
+  text-align: center;
+  font-family: cursive;
+  font-size:20px;
+  color: #003266;
+  
+}
+
+.texto{
+  text-align: justify;
+  font-family: cursive;
+  font-size:14px;
+  color: #003266;
+}
+
+.btncatalogo{
+  background-color: #003266;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    text-align: left; 
+   
+    margin: 4px 2px;    
+    border-radius: 10px;
+}
+
+#piedepagina {
+  background-color: #003266;
+  padding: 15px;
+  margin: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tcategoria{
+  color:white;
+  font-family: cursive;
+}
+
+/*inforacion footer ***************************************************************************/
+#cabeceraf{
+  padding: 15px;  
+background-color: #003366 ;
+border-radius: 20px;
+border-style: groove;  
+display: flex;
+justify-content: left;
+ align-items: center;
+ gap: 25px;  
+ /* Specific Gap */
+ row-gap: 25px;
+ column-gap: 75px;   
+ /* Or shorthand */
+ gap: 25px 100px;  
+ place-items: left;
+ border-radius: 15px;
+ font-family: cursive;   
+ 
+}
+
+ /*adaptacion a 600 o menos px***************************************************************************** */
+ 
+ .grid-container {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  
+
+}
+
