@@ -14,19 +14,18 @@
 
   /*inforacion header menu ***************************************************************************/
   #cabecera{
-    padding: 15px;  
+    padding: 10px;  
   background-color: #003366 ;
   border-radius: 20px;
   border-style: groove;  
   display: flex;
-  justify-content: left;
-   align-items: center;
-   gap: 25px;  
+  
+   
+   
    /* Specific Gap */
-   row-gap: 25px;
-   column-gap: 75px;   
+    
    /* Or shorthand */
-   gap: 25px 425px;  
+   gap: 60px 425px;  
    place-items: center;
    border-radius: 15px;
    font-family: cursive;   
@@ -39,9 +38,9 @@
     color: white;
     padding: 15px 32px;
     text-align: center; 
-    font-size: 16px;
+    font-size: 10px;
     margin: 4px 2px;    
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: cursive;
       
 }
@@ -53,8 +52,14 @@
     
   }
   #contenedor{
+    
+    border-radius: 15px;
+    border-style: groove;  
+    max-width: 1400px;
+    margin: 0 auto;
     text-align: center;
-   
+    border-spacing: static;
+    
   }
   /*estilos a catalogos*************/
 
@@ -121,6 +126,10 @@
 .tcategoria{
   color:white;
   font-family: cursive;
+}
+
+.imagen{
+  text-align: center;
 }
 
 /*inforacion footer ***************************************************************************/
