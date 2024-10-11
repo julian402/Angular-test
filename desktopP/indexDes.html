@@ -1,163 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="./styloedi.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   </head>
   <body>
-    <header id="cabecera">
-      <div>
-        <img
-          class="principal"
-          src="./images/Captura de pantalla 2024-09-27 171202.png"
-          width="105"
-          height="105"
-        />
-      </div>
+    <div id="cabecera">
+      <img id="cab1" src="./images/Captura de pantalla 2024-09-27 171202.png" width="70" height="70" alt="logo_bitcook" />
       <div class="buttons">
         <button class="btnsucess">Inicio</button>
         <button class="btnsucess">Productos</button>
         <button class="btnsucess">Categorias</button>
         <button class="btnsucess">Ofertas</button>
       </div>
-      <nav>
-        <a class="imagenes" href=""
-          ><img src="./images/corazon2.png" width="90" height="60" alt=""
-        /></a>
-        <a class="imagenes" href=""
-          ><img src="./images/carronuevo.png" width="90" height="60" alt=""
-        /></a>
-        <a href=""
-          ><img src="./images/usuario.png" width="90" height="60" alt=""
-        /></a>
-      </nav>
-    </header>
-    <br />
-    <br />
-    <div id="contenedor">
-      
+      <div class="icons">
+        <button class="icon-buttons" aria-label="Favoritos">
+            <i class="fas fa-heart"></i>
+        </button>
+        <button class="icon-buttons" aria-label="Carrito">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="icon-buttons" aria-label="Perfil de usuario">
+            <i class="fas fa-user"></i>
+        </button>
+    </div>
 
-      
-      <h1 class="titulo">Dejanos ser parte de tu estilo</h1>
+    </div>
+    
+    
+    <!--inicio contendor grid -->
+    <div class="contenedor">
+      <header class="header">
+        <h1 class="titulo">Dejanos ser parte de tu estilo</h1>
+    <br />
+    <br />
+    <img
+      class="image"
+      src="./images/raya.png"
+      width="1000"
+      height="15"
+      alt=""
+      />
       <br />
-      <img
-        class="image"
-        src="./images/raya.png"
-        width="730"
-        height="15"
-        alt=""
-      /><br /><br />
-      <img
+      <br />
+        <img
         class="imagen"
         src="./images/mujer1.png"
-        width="345"
+        width="237"
         height="215"
         alt=""
       />
       <img
         class="imagen"
         src="./images/hombrebasket.png"
-        width="345"
+        width="237"
         height="215"
         alt=""
       />
       <img
         class="imagen"
         src="./images/infantil.png"
-        width="345"
+        width="237"
         height="215"
         alt=""
       />
       <img
         class="imagen"
         src="./images/hombresport.png"
-        width="345"
+        width="237"
         height="215"
-        alt=""
-        
+        alt=""        
       />
-      <div>
-        <br />
-        <h1 class="titulo">Elije lo que deseas</h1>
-        <br />
-        <img
+      </header>
+      <h2 class="titulo">Elige lo que deseas</h2>
+      <br />
+        <img class="image"
           src="./images/raya2.png"
           width="420"
           height="15"
           alt=""
-        /><br /><br />
-      </div>
-    </div>
-  
-    
-    <section class="catalogos">
-      <div class="grid-container">
-        <div class="grid-item">
-           <img
-            src="./images/hombrecatalogo.png"
-            width="245"
-            height="170"
-            alt=""
           />
-          <h3 class="titulocard">HOMBRE</h3>
+      <div class="grid-container">
+        <div class="item">
+          <img
+            class="mexicana"
+            src="./images/hombrecatalogo.png"
+            alt="pizza peperoni"
+          />                  
+          <h2 class="titulo1">Hombre</h2>
+         <p class="texto">
+          Más allá del diseño o las tendencias la ropa que utilizamos para activarnos fisicamente  debe adaptarse al tipo de ejercicio
+        </p><br>
+        <button class="btnsucess">Catalogo Hombres</button>
+        </div>
+        <div class="item">
+          <img
+            class="mexicana"
+            src="./images/mujercatalogo.png"
+            alt="pizza-salami"
+          />         
+          <h2 class="titulo1">Mujer</h2>
           <p class="texto">
-            una cómoda y espectacular ropa deportiva para hombre.Tenemos buzos,
-            chaquetas, camisetas, pantalonetas y otras prendas
-          </p><br><br>
-          <button class="btncatalogo">Ver Catalogo Hombres</button>                  
+            Más allá del diseño o las tendencias la ropa que utilizamos para activarnos fisicamente  debe adaptarse al tipo de ejercicio
+         </p>
+         <br>
+        <button class="btnsucess">Catalogo mujeres</button>
         </div>
-        <div class="grid-item">
-          <img src="./images/mujercatalogo.png"  width="245" height="170" alt="">
-          <h3 class="titulocard">MUJER</h3>
-          <P class="texto">
-            La ropa deportiva para mujer es ideal para tu actividad fisica favorita. Buzos camisetas,chaquetas,jogeers, mucho mas
-          </P><br><br>
-          <button class="btncatalogo">Ver Catalogo Mujeres</button>
-        </div>
-        <div class="grid-item">
-         <img src="./images/infantilcatalogo.png" width="245" height="170" alt="">
-         <h3 class="titulocard">INFANTIL</h3>
-         <P class="texto">
-          Divertidas prendas que les dara todo el confort a los niños en las actividades deportivas, es una coleccion pensada en la comodidad y estilo para los pequeños
-        </P><br>
-        <button class="btncatalogo">Ver Catalogo Infantil</button>
+        <div class="item">
+          <img
+            class="mexicana"
+            src="./images/infantilcatalogo.png"
+            alt="pizza-hawallana"
+          />          
+          <h2 class="titulo1">Infantil</h2>
+          <p class="texto">
+            Más allá del diseño o las tendencias la ropa que utilizamos para activarnos fisicamente  debe adaptarse al tipo de ejercicio
+          </p>
+          <br>
+        <button class="btnsucess">Catalogo Infantil</button>
         </div>         
-    </section>
-    <footer id="cabeceraf">
-      <div>
-        <img
-          class="principal"
-          src="./images/Captura de pantalla 2024-09-27 171202.png"
-          width="150"
-          height="150"
-        />
+      </div> 
+    </div> 
+  
+      <footer id="footer">
+        <div class="container">
+          
+         <div class="footer-row">
+         <div class="footer-links">
+          <div>
+            <img src="./images/Captura de pantalla 2024-09-27 171202.png" width="140" height="140" alt="">
+           </div>
+         </div>
+           <div class="footer-links">
+               
+               <h4>CATEGORIAS</h4>
+               <ul>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Infantil</a></li>
+               </ul>
+           </div>
+           <div class="footer-links">
+            <h4>INFORMACION</h4>
+            <ul>
+             <li><a href="#">Nuestra Historia</a></li>
+             <li><a href="#">Nuestras Tiendas</a></li>
+             <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+          <h4>SERVICIO AL CLIENTE</h4>
+          <ul>
+           <li><a href="#">Politicas</a></li>
+           <li><a href="#">Preguntas Frecuentes</a></li>
+           <li><a href="#">Terminos y Condiciones</a></li>
+          </ul>
       </div>
-      <div>
-        <p class="tcategoria">CATEGORIAS</p><br>
-        <p class="tcategoria">Hombres</p>
-        <p class="tcategoria">Mujeres</p>
-        <p class="tcategoria">Infantil</p>
-      </div>
-      <div>
-        <p class="tcategoria">INFORMACION</p><br>
-        <p class="tcategoria">Nuestra Historia</p>
-        <p class="tcategoria">Nuestras Tiendas</p>
-        <p class="tcategoria">Contacto</p>
-      </div>
-      <div>
-        <p class="tcategoria">SERVICIO AL CLIENTE</p><br>
-        <p class="tcategoria">Politicas</p>
-        <p class="tcategoria">Preguntas Frecuentes</p>
-        <p class="tcategoria">Terminos y Condiciones</p>
-      </div>
-       <div>
-        <p class="tcategoria">INSCRIBETE PARA RECIBIR NOVEDADES</p><br>
-        <textarea rows="" cols=""></textarea>
-       </div>
-
-     
-    </footer>
+      <div class="footer-links">
+        <h4>INSCRIBASE PARA RECIBIR NOVEDADES</h4>
+          <textarea rows="" cols="" class="textoins"></textarea>
+          <div class="social-links">            
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+    </div>
+         </div>
+        </div>
+  
+      </footer>
   </body>
 </html>

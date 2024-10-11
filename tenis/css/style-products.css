@@ -30,21 +30,26 @@ header div {
   gap: 10px;
 }
 
-header div ul {
+header ul {
   display: flex;
   list-style: none;
-  gap: 5px;
+  gap: 10px;
 }
 
-header div nav ul li button {
+header nav ul li{
+  margin: 10px 20px;
+}
+
+header nav ul li button {
   background-color: #75a2bf;
   padding: 8px;
   border-radius: 10px;
   text-align: center;
   border: none;
+  align-self:baseline;
 }
 
-header div nav ul li button:hover {
+header nav ul li button:hover {
   background-color: #35d6ed;
 }
 
@@ -80,7 +85,7 @@ main .first section #search{
 }
 
 main .first section #search input {
-  min-width: 280px;
+  width: 480px;
   background-color: #75A2BF;
   text-align: center;
   color: white;
@@ -131,6 +136,12 @@ main .first section .second .productCard img{
     padding: 0;
 }
 
+main .first section .second .productCard img:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  transform: translateY(-2%) scale(1.05);
+}
+
 main .first section .second .productCard h2{
     align-self: center;
     margin: 0 10px;
@@ -169,8 +180,40 @@ main .first section .second .productCard div button{
 
 main .first aside {
   grid-column: span 1;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #2F5F8A;
+  color: white;
+  border-radius: 20px;
 }
 
+main .first aside h2{
+  text-decoration: underline;
+}
+
+main .first aside label{
+  display: block;
+}
+
+main .first aside select{
+  border-radius: 5px;
+  padding: 2px;
+}
+
+main .first aside #fil-precio{
+  display: flex;
+  max-width: 80%;
+  gap: 5px;
+}
+
+main .first aside #fil-precio input{
+  max-width: 50%;
+  padding: 2px;
+  border-radius: 5px;
+}
 
 footer{
   display: flex;
@@ -179,6 +222,8 @@ footer{
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
+  min-width:98%
+
 }
 
 footer img {
@@ -189,17 +234,25 @@ footer img {
 
 footer .footer1 {
   color: white;
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
 }
 
 footer .footer1 ul{
   list-style: none;
   font-size: 11px;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
+footer .footer1 ul a{
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer2{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  
+}
 
 footer .footer2 button{
   background-color: #003366;
@@ -221,7 +274,7 @@ footer .footer2 h4{
 }
 
 footer .footer2 .redes img{
-  max-height: 30px;
+  max-height: 25px;
 }
 
 
@@ -231,11 +284,19 @@ footer .footer2 .redes img{
 
 
 @media screen and (max-width: 760px) {
+
+  header nav ul li{
+    margin: 10px auto;
+  }
+
   main .first section .second {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: auto;
   }
+
+  main .first section #search input {
+    width: 280px;}
 }
 
 @media screen and (max-width: 580px) {

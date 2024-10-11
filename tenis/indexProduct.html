@@ -7,43 +7,55 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
       <header>
         <img src="./img/Logo.png" alt="" />
+        <nav>
+          <ul>
+            <li>
+              <button>Inicio</button>
+            </li>
+            <li><button>Productos</button></li>
+            <li><button>Categorias</button></li>
+            <li><button>Ofertas</button></li>
+          </ul>
+        </nav>
         <div>
-          <nav>
-            <ul>
-              <li>
-                <button>Inicio</button>
-              </li>
-              <li><button>Productos</button></li>
-              <li><button>Categorias</button></li>
-              <li><button>Ofertas</button></li>
-            </ul>
-          </nav>
-          <div>
-            <ul>
-              <li>
+          <ul>
+            <li>
+              <a href="">
                 <img class="imgHeader" src="./img/TwitterX.svg" alt="Logo x" />
-              </li>
-              <li><img class="imgHeader" src="./img/Heart.svg" alt="" /></li>
-              <li>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><img class="imgHeader" src="./img/Heart.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
                 <img
                   class="imgHeader"
                   src="./img/Add Shopping Cart.svg"
                   alt="Carrito"
-                />
-              </li>
-              <li><img class="imgHeader" src="./img/User.svg" alt="" /></li>
-            </ul>
-          </div>
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img class="imgHeader" src="./img/User.svg" alt=""
+              /></a>
+            </li>
+          </ul>
         </div>
       </header>
       <main>
         <div class="first">
           <section>
             <article id="search">
-              <input type="search" name="search" />
+              <input
+                type="search"
+                name="search"
+                placeholder="Buscar Producto ..."
+              />
               <button><img src="./img/Group 1.svg" alt="" /></button>
             </article>
             <div class="second">
@@ -89,56 +101,104 @@
             </div>
           </section>
           <aside>
-            <h2>filtros</h2>
+            <section id="ordenar">
+              <h2>Ordenar</h2>
+              <div>
+                <label>Por</label>
+                <select name="orden" id="orden">
+                  <option value="">más relevante</option>
+                  <option value="">menor precio</option>
+                  <option value="">mayor precio</option>
+                </select>
+              </div>
+            </section>
+            <section id="filtrar">
+              <h2>Filtrar</h2>
+              <div>
+                <label>Marca</label>
+                <select name="Marca" id="Marca">
+                  <option selected="True" disabled="disabled">Seleccione la marca</option>
+                  <option value="">Adidas</option>
+                  <option value="">Nike</option>
+                </select>
+              </div>
+              <div>
+                <label>Talla</label>
+                <select name="Talla" id="Talla">
+                  <option selected="True" disabled="disabled">Seleccione la talla</option>
+                  <option value="">L</option>
+                  <option value="">XL</option>
+                </select>
+              </div>
+              <div>
+                <label>Genero</label>
+                <select name="Genero" id="Genero">
+                  <option selected="True" disabled="disabled">Seleccione el genero</option>
+                  <option value="">Hombre</option>
+                  <option value="">Mujer</option>
+                  <option value="">Niño</option>
+                  <option value="">Niña</option>
+                </select>
+              </div>
+              <div>
+                <label>Precio</label>
+                <div id="fil-precio">
+                <input type="text" placeholder="precio-min">
+                <input type="text" placeholder="precio-max">
+              </div>
+              </div>
+            </section>
           </aside>
         </div>
       </main>
       <footer>
         <img src="./img/Logo.png" alt="" />
-        <section class="footer1">
-          <article>
+        
+          <article class="footer1">
             <h5>Categorias</h5>
-            <ul><li>Hombre</li>
-            <li>Mujer</li>
-          <li>Niño</li></ul>
+            <ul>
+              <li><a href="">Hombre</a></li>
+              <li><a href="">Mujer</a></li>
+              <li><a href="">Niño</a></li>
+              <li><a href="">Niña</a></li>
+            </ul>
           </article>
-          <article>
+          <article class="footer1">
             <h5>Informacion:</h5>
             <ul>
-              <li>Nuestra Historia</li>
-              <li>Nuestras Tiendas</li>
-              <li>Contacto</li>
+              <li><a href="">Nuestra Historia</a></li>
+              <li><a href="">Nuestras Tiendas</a></li>
+              <li><a href="">Contacto</a></li>
             </ul>
           </article>
-          <article>
+          <article class="footer1">
             <h5>Servicio al Cliente</h5>
             <ul>
-              <li>Politicas</li>
-              <li>Preguntas Frecuentes</li>
-              <li>Terminos y Condiciones</li>
+              <li><a href="">Politicas</a></li>
+              <li><a href="">Preguntas Frecuentes</a></li>
+              <li><a href="">Terminos y Condiciones</a></li>
             </ul>
           </article>
-        </section>
+        
         <section class="footer2">
           <h4>Inscribirse para recibir novedades</h4>
           <article>
-          <input
-            type="email"
-            name="
+            <input
+              type="email"
+              name="
 register"
-            id=""
-          />
-          <button><img src="./img/Email Send.svg" alt=""></button>
-        </article>
+              id=""
+            />
+            <button><img src="./img/Email Send.svg" alt="" /></button>
+          </article>
           <div class="redes">
             <ul>
-              <li><img src="./img/TwitterX.svg" alt="" /></li>
-              <li><img src="./img/Instagram.svg" alt="" /></li>
-              <li><img src="./img/Facebook.svg" alt="" /></li>
+              <li><a href=""><img src="./img/TwitterX.svg" alt="" /></a></li>
+              <li><a href=""><img src="./img/Instagram.svg" alt="" /></a></li>
+              <li><a href=""><img src="./img/Facebook.svg" alt="" /></a></li>
             </ul>
           </div>
         </section>
       </footer>
-    </div>
   </body>
 </html>

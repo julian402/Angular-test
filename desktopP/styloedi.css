@@ -1,167 +1,217 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /*max-width: 800px; */
-    font-family: "Open Sans", sans-serif;
- 
-  }
-
-  /*propiedades del body****************************************************************************** */
-  body {
-    background-color: #FFFFFF ;
-  }
-
-  /*inforacion header menu ***************************************************************************/
-  #cabecera{
-    padding: 10px;  
-  background-color: #003366 ;
-  border-radius: 20px;
-  border-style: groove;  
-  display: flex;
-  
-   
-   
-   /* Specific Gap */
-    
-   /* Or shorthand */
-   gap: 60px 425px;  
-   place-items: center;
-   border-radius: 15px;
-   font-family: cursive;   
-   
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*max-width: 800px; */
+  font-family: "Open Sans", sans-serif;
 }
-/*estilo botones*/
-.btnsucess{
-    background-color: #75A2BF;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center; 
-    font-size: 10px;
-    margin: 4px 2px;    
-    border-radius: 5px;
-    font-family: cursive;
-      
+
+/*propiedades del body****************************************************************************** */
+body {
+  
+  height: 100vh; /* Viewport height */
+
+  
+}
+
+/*CABECERA DEL SITIO****************************************************************************** */
+#cabecera {
+    grid-area: encabezado;
+    background-color: #003366;
+    padding: 15px;
+    margin: 0 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+  }
+
+  .cab2 {
+    color: #FFFFFF;
+    font-family: "Kanit", sans-serif;
+  }
+
+/*Configuracion del grid****************************************************************************** */
+
+.contenedor{
+    margin-top: 90px; 
+    max-width: 1000px;  
+     margin: 0 auto;
+    text-align: center;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 300px 100px;
+   grid-template-areas:none
+  
+
+}
+
+.header{
+   
+  
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  padding: 95px 18px 18px;
+  border-radius: 10px;
+  opacity: 1;
+  text-align: left;
 }
 .titulo{
+    color: #174978;
+    font: oblique bold 270% cursive;
+    line-height: 100%;
     text-align: center;
-    font-family: cursive;
-    font-size:40px;
-    color: #003266;
     
-  }
-  #contenedor{
-    
-    border-radius: 15px;
-    border-style: groove;  
-    max-width: 1400px;
-    margin: 0 auto;
-    text-align: center;
-    border-spacing: static;
-    
-  }
-  /*estilos a catalogos*************/
-
-.catalogos{  
-  max-width: 1000px;  
-  margin: 0 auto;
-  text-align: center;
-  
-}
-.grid-container {
-  margin-top: 60px;
-  margin-bottom: 55px;
- display: grid;
- grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
- grid-template-rows: repeat(2, 368px); /* Crea 3 filas de altura fija de 100px */
- gap: 10px; /* Espacio entre las celdas */
- 
-}
-
-.grid-item {
-
- color: #fff;
- text-align: center;
- padding: 20px;
- border-radius: 20px;
- border-style:groove;
-}
-
-.titulocard{
-  text-align: center;
-  font-family: cursive;
-  font-size:20px;
-  color: #003266;
-  
 }
 
 .texto{
-  text-align: justify;
-  font-family: cursive;
-  font-size:14px;
-  color: #003266;
+  text-align: left;
+  color: #000000;
 }
 
-.btncatalogo{
-  background-color: #003266;
-    border: none;
-    color: white;
-    padding: 8px 10px;
-    text-align: left; 
-   
-    margin: 4px 2px;    
-    border-radius: 10px;
-}
-
-#piedepagina {
-  background-color: #003266;
-  padding: 15px;
-  margin: 2px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.tcategoria{
-  color:white;
-  font-family: cursive;
-}
-
-.imagen{
+.image{
   text-align: center;
 }
 
-/*inforacion footer ***************************************************************************/
-#cabeceraf{
-  padding: 15px;  
-background-color: #003366 ;
-border-radius: 20px;
-border-style: groove;  
-display: flex;
-justify-content: left;
- align-items: center;
- gap: 25px;  
- /* Specific Gap */
- row-gap: 25px;
- column-gap: 75px;   
- /* Or shorthand */
- gap: 25px 100px;  
- place-items: left;
- border-radius: 15px;
- font-family: cursive;   
- 
+.grid-container {
+     margin-top: 60px;
+     margin-bottom: 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+    grid-template-rows: repeat(2, 370px); /* Crea 3 filas de altura fija de 100px */
+    gap: 10px; /* Espacio entre las celdas */
+    
 }
 
- /*adaptacion a 600 o menos px***************************************************************************** */
- 
- .grid-container {
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: dense;
-  grid-auto-rows: 22rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+.item {
+    background-color: #FFFFFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #174978;
+}
+
+
+.titulo1{
+    color: #003366;
+    font: oblique bold 150% cursive;
+
+}
+
+.mexicana{
   
+  max-width: 180px;
+  background-size:cover;
+    
+}
+
+
+
+body {
+  font-family: sans-serif;
 
 }
 
+.container{
+  max-width: 1891px;
+  margin: 0 auto;
+  background-color: #003366;
+  padding: 50px;
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links{
+  width: 20%;
+  padding: 0 15px;
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00C3FF;
+  padding-bottom: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-links ul li a {
+   font-size: 18px;
+   text-decoration: none;
+   color: #FFFFFF;
+   display: block;
+   margin-bottom: 15px;
+   transition: all .3s ease;
+
+}
+
+.footer-links ul li a:hover{
+  color: #FFFFFF;
+  padding-left: 6px;
+  
+}
+
+.social-links a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  color: #FFFFFF;
+}
+
+.btnsucess{
+  background-color: #75A2BF;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+ 
+  
+}
+
+.textoins{
+  width: 270px;
+}
+
+.icon-buttons{
+  width: 35px;
+  height: 35px;
+  background-color: #003366;
+  border-style: none;
+  color: #FFFFFF;
+}
+
+@media(max-width:991px){
+  .footer-row{
+    text-align: center;
+  }
+  .footer-links{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+  /*adaptacion a 600 o menos px***************************************************************************** */
+ 
+  .grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+
+  }
